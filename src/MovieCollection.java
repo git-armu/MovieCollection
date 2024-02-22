@@ -8,3 +8,4 @@ public class MovieCollection {
         collection[count++] = new Movie(movieName, movieDirector, movieGenre);
     }
 }
+
