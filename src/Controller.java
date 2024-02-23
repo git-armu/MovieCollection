@@ -1,4 +1,4 @@
-public class Controller {
+public class Controller { // controller class (UML)
     private MovieCollection movieCollection;
 
     public Controller() {

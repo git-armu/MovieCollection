@@ -15,7 +15,7 @@ public class Main {
 
             scanner.nextLine();
 
-            if (menuOption != 1) { // check if user has chosen to cancel
+            if (menuOption != 1) { // check if user cancelled
                 System.out.println("You have chosen to cancel. Goodbye!");
                 break;
 
@@ -30,7 +30,7 @@ public class Main {
                 String movieGenre = scanner.nextLine();
 
                 System.out.println("Your movie " + movieName + " has been added to your collection.");
-                controller.addMovie(movieName, movieDirector, movieGenre);
+                controller.addMovie(movieName, movieDirector, movieGenre); // adds movie using controller
             }
         }
 
