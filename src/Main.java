@@ -4,7 +4,7 @@ public class Main {
 
         while (true) {
             Scanner scanner = new Scanner(System.in);
-            MovieCollection movieCollection = new MovieCollection();
+            Controller controller = new Controller();
 
             System.out.println("##############################");
             System.out.println("# Welcome to your collection #");
@@ -15,7 +15,7 @@ public class Main {
 
             scanner.nextLine();
 
-            if (menuOption != 1) {
+            if (menuOption != 1) { // check if user has chosen to cancel
                 System.out.println("You have chosen to cancel. Goodbye!");
                 break;
 
@@ -30,10 +30,9 @@ public class Main {
                 String movieGenre = scanner.nextLine();
 
                 System.out.println("Your movie " + movieName + " has been added to your collection.");
-                movieCollection.addMovie(movieName, movieDirector, movieGenre);
+                controller.addMovie(movieName, movieDirector, movieGenre);
             }
-
-
         }
+
     }
 }
